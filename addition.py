@@ -24,3 +24,4 @@ with tf.Session() as session:
     #two arguments that will be fed as dict (feed_dict)
     result = session.run(addition, feed_dict={X: [1], Y: [4]})
     print(result)
+    
