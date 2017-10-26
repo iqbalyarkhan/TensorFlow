@@ -8,8 +8,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 """
 Created two nodes called X and Y that'll hold 
-data type of float32 and will be called X and
-Y respectively. 
+data type of float32 
 """
 X = tf.placeholder(tf.float32, name="X")
 Y = tf.placeholder(tf.float32, name="Y")
@@ -25,3 +24,4 @@ with tf.Session() as session:
     #two arguments that will be fed as dict (feed_dict)
     result = session.run(addition, feed_dict={X: [1], Y: [4]})
     print(result)
+    
